@@ -1,0 +1,6 @@
+:root {
+	/* if u want to change the color of
+	 * the ripple change this value
+	*/
+	--color-ripple: rgba(0,0,0,0.7);
+}

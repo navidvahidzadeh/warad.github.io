@@ -1,0 +1,451 @@
+.affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+ 
+@font-face{
+	font-family:'bnaz';
+	src:url(../fonts/BNazanin.ttf);
+}
+@font-face{
+	font-family:'btitr';
+	src:url(../fonts/BTitrBold.ttf);
+}
+body,html,p,ul,li,h1,h2,h3,h4,h5,h6,.container,.container-fluid,[class*="col-"],.nav,.navbar-collapse,.row{
+	margin: 0;
+	padding: 0;
+}
+body,html{
+	background-color: #111;
+}
+.camera_wrap{
+	height:70vh !important;
+}
+.camera_caption{
+	direction:rtl;
+	font-size:20px;
+	font-family:'bnaz';
+}
+.camera_caption  div{
+	padding: 30px;
+}
+nav,#myNavbar{
+	overflow: hidden;
+}
+.nav{
+	margin-top: -1px;
+	width: 103%;
+	margin-right: -1px;	
+	box-shadow:0 5px 5px 0px rgba(255,255,255,0.2);
+}
+.nav li{
+	text-align: center;
+	float: right;
+}
+.nav li a{
+	font-size:18px;
+	font-family: 'btitr';
+	background-color: #333;
+	border-bottom:5px solid #2098D1;
+	color:white;
+}
+.hvr-shutter-in-vertical::before{
+	background-color: #333;
+}
+.nav > li > a:focus, .nav > li > a:hover{
+	background-color: #2098D1;
+	color:khaki;
+}
+.navbar-toggle{
+	display: none;
+}
+@media only screen and (max-width:768px){
+	.navbar-toggle{	
+		text-align: center;
+		float: none;
+		margin: 0 auto;
+		display: block;
+		padding: 20px;
+		width: 100%;
+	}
+	.icon-bar{
+		background-color: #f70;
+		margin: 0 auto;
+	}
+	.hvr-shutter-in-vertical{
+		background-color: transparent;
+	}
+	.nav{
+		margin-left: -1.5%;
+	}
+	.nav li{
+		width: 100%;		
+	}
+	.nav li a{
+		border-bottom-width:2px;
+	}
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover{
+	background-color: #2098D1;
+}
+/*******************************************/
+/*              Main - Start               */
+/*******************************************/
+.main-area{
+	margin-top: 400px;
+	position: relative;
+	text-align: center;
+}
+.plan-heading{
+	position: absolute;
+	top:-28%;
+	color:whtie !important;
+	text-shadow:0 0 3px grey;
+	font-family:'btitr';
+	left: 50%;
+	transform:translate(-50%,0);
+	font-size:30px;
+}
+.plan-wrapper{
+	
+	
+	
+	padding: 20px;
+	box-sizing:border-box;
+}
+.plan{
+	background-color: rgba(30,30,30,0.8);
+	position: relative;
+	padding: 20px;
+	padding-bottom: 40px;
+	padding-top: 80px;
+	/*transform:scale(0.95,1)*/
+}
+.plan hr{
+	border-top:solid 2px #2098D1;
+}
+.avatar{
+	position:absolute;
+	
+	left: 50%;
+	transform:translate(-50%,-130%);
+	background-color: #2098D1;
+	border-radius:50%;
+	width: 100px;
+	text-align: center;
+	height: 100px;
+	line-height: 120px;
+}
+.avatar span.fa{
+	color:white;
+	font-size:50px !important;
+}
+.plan-caption{
+	color:khaki;
+	font-family:'btitr';
+	text-align: center;
+	margin-bottom: 20px;	
+}
+.plan-text{
+	color:#ccc;
+	direction:rtl;
+	-ms-text-align-last: right;
+	text-align-last: right;
+	font-size:20px;
+	text-align: justify;
+	font-family:'bnaz'
+}
+.plan-detail{
+	text-align: right;
+	-ms-text-align-last: right;
+	text-align-last: right;	
+	color:#ccc;
+	direction:rtl;
+	font-size:20px;
+	float: right;
+	font-family:'bnaz'
+}
+.plan-detail .fa:hover{
+	color:#f70;	
+}
+.plan-gold{
+	
+}
+.plan-detail::after{
+	display: block;
+	content:'';
+	clear: both;
+}
+.gold-plan{
+	transform:scale(1.1,1);
+	transform:translate(0,-15%) !important;
+}
+/*******************************************/
+/*               Main - End                */
+/*******************************************/
+
+/*******************************************/
+/*           Portfolio - Start             */
+/*******************************************/
+.portfolio-wrapper{
+	padding: 20px;
+	box-sizing:border-box;
+}
+.portfolio-heading{
+	text-align: center;
+	color:white;
+	font-size:40px;
+	font-family:'btitr';
+	margin-bottom: 100px;
+}
+.portfolio{
+	position:relative;
+	height:700px;
+	overflow: hidden;
+}
+.portfolio .footer{
+	position:absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #222;
+	border-top:solid 1px grey;
+	height:200px;
+	width: 50%;
+	margin-left: 25%;
+}
+.pic{
+	width: 50%;
+	margin-left: 25%;
+	position:relative;
+}
+.over{
+	position:absolute;
+	height: 0;
+	width: 100%;	
+	background-color: rgba(0,0,0,0.5);
+	transition:all 3s ease !important;
+	text-align: center;
+}
+.pic img{
+	position:absolute;
+	margin-top: 0;
+	transition:all 3s ease !important;
+	border-radius:10px 10px 0 0 ;
+}
+.pic:hover img{
+	margin-top: -680px;
+	cursor:pointer
+}
+.pic2:hover img{
+	margin-top: -470px;
+}
+.pic:hover .over{	
+	height: 700px;
+	line-height: 700px;
+}
+.over .fa{	
+	padding: 20px;
+	font-size:20px;
+	background-color: rgba(0,0,0,0.8);
+	color:khaki;
+	border-radius:2px;
+	border:solid 1px khaki;
+	transition:0.6s ease all;
+	display: none;	
+}
+.over:hover .fa{
+	display: inline-block !important;
+}
+.over .fa:hover{
+	background-color: #000;
+	cursor:pointer;
+}
+.over:hover h2{
+	display: block;
+	cursor:pointer;
+}
+.over h2{
+	font-family:'btitr';
+	font-size:30px;
+	color:khaki;
+	margin-top:200px;
+	margin-bottom: -200px;
+	display: none;
+}
+.portfolio .footer{
+	padding: 20px;
+	color:khaki;
+	font-size:20px;
+	font-family:'bnaz';
+	text-align: justify;
+	-ms-text-align-last: right;
+	text-align-last: right;
+	direction:rtl;	
+}
+.about,.contact{
+	color:white;
+	font-size:30px;
+	font-family:'btitr';
+	text-align: center;	
+}
+#about{
+	margin-top: 100px;
+	background: url(../images/05.jpeg);
+	background-position: center center;
+	background-color: rgba(0,0,0,0.8);
+	background-blend-mode:multiply;
+	-webkit-background-size: 	cover;
+	background-size: contain;
+	background-attachment: fixed;
+	height: 400px;
+	line-height:1.5;
+	color:white;
+	font-size:20px;
+	padding: 20px;
+	text-align: justify;
+	font-family:'btitr';
+	direction:rtl;
+}
+.contactus{
+	margin-top: 100px;
+	padding: 20px;
+	direction:rtl;
+	color:white;
+	font-family:'btitr';
+	font-size:16px;
+	text-decoration:italic;
+}
+.contact{
+	margin-bottom: 50px;
+}
+.contactus iframe{
+	width: 80%;
+	margin-left: 10%;
+	height: 300px;
+}
+.contactus .row:first-child{
+	padding: 30px;
+	padding-bottom: 0;
+}
+.contactus .row:last-child{
+	width: 100%;
+	padding: 0;
+}
+.socials{
+	/*margin: 0 auto !important;
+	float: none;*/
+}
+.info{
+	border-bottom:solid 1px khaki;
+	
+	margin: 0 auto;
+	width: 50%;
+	
+}
+.socials span.fa{
+	color:#F2FF95;
+	font-size:36px !important;	
+	padding: 10px 12px;
+	cursor:pointer;
+	transition:all 0.5s ease;	
+	margin-top: 10px;
+	border-radius:50%;
+}
+.socials span.fa:hover{
+	background-color: #F2FF95;	
+	color:black;
+	padding:6px 8px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+#under{
+	display: none;
+}
+/*******************************************/
+/*           Portfolio - End               */
+/*******************************************/
+@media only screen and (max-width:992px){
+	.gold-plan{
+		transform:none !important;
+	}
+	#plan{
+		top: -10%;			
+	}
+	.plan-wrapper:last-child{
+		transform:translate(0,-20%);
+	}
+	#about{
+		height: 500px;
+	}
+	.pic,.portfolio .footer{
+		width: 80%;
+		margin-left: 10%;
+	}
+	.row:last-child{
+		/*padding-right: 21% !important;*/
+	}
+}
+@media only screen and (min-width:992px) and (max-width:1200px){
+	.row:last-child{
+		/*padding-right: 24% !important;*/
+	}
+}
+
+@media only screen and (min-width:1200px){
+	.info{	
+		margin-top: 100px;	
+	}
+}
+@media only screen and (max-width:350px){
+	#under{
+		display: block;
+		color:white;
+		background-color: #000;
+		position:fixed;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		z-index:1000000000;
+		font-family:'btitr';
+		font-size:20px;
+		text-align: center;		
+		direction:rtl;
+		word-break: break-all;
+		word-wrap: break-word;
+		padding: 0 !important;
+		margin: 0 !important;
+		border:none;
+	}
+}
+@media only screen and (max-width:768px) and (min-width:350px){
+	.navbar-header{
+		background-color: #222;
+	}
+	.plan-gold{
+		margin-top: 40px;
+	}
+	.plan{
+		padding-bottom: 50px !important;
+	}
+	.plan-wrapper:last-child{
+		margin-top: 160px;
+	}
+	#about{
+		height: 750px;
+	}
+	.contactus iframe{
+		margin: 0 !important;
+		width: 100%;
+	}
+}
+@media only screen and (min-width:768px){
+	.navbar-collapse.collapse{
+		display: none !importants;
+	}
+}
